@@ -1,68 +1,79 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+## Análisis de Requerimientos según historias de usuario de Instituciones
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+**Propósito:**
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Proyecto de Sistema integrado implementado en React y Angular, que busca gestionar la interacción entre las empresas, Reclutadores (instituciones y municipios principalmente) y postulantes. Donde nosotros a través del portal de Reclutadores, actuaremos como intermediarios entre las empresas y postulantes.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console
+**Historia de usuario 1**
 
-### `npm test`
+La institución quiere poder ingresar al portal a través de su cuenta, donde poder gestionar su perfil, los postulantes y las empresas.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-Debe poder registrar una cuenta
 
-### `npm run build`
+-debe poder loguearse
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-debe una vez longueado ser redirigido a su dashboard.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+**Historia de usuario 2**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+La institución quiere poder acceder a toda la información relacionada a su institución, postulantes y empresas, además de poder cambiar el tamaño de la letra y recibir alerta de notificaciones.
 
-### `npm run eject`
+-Debe poder acceder a su perfil para configurarlo y personalizar su cuenta.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-Debe poder acceder a la vista de las empresas para vincularse con ellas
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-Debe poder acceder a los avisos de los postulantes para gestionarlos
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+-Debo poder gestionar los avisos de ofertas de trabajo generados por las empresas.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Historia de Usuario 3**
 
-## Learn More
+La institución quiere poder personalizar su cuenta y anexar sus datos.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-Debe poder ingresar, guardar y modificar la información de su empresa
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-Debe poder ingresar, guardar y modificar la información de un contacto encargado de la cuenta.
 
-### Code Splitting
+-Debe poder personalizar con su logo.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+**Historia de Usuario 4**
 
-### Analyzing the Bundle Size
+La institución quiere poder gestionar los avisos de oferta laboral de llegan de las empresas.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+-Debe poder visualizar los avisos tanto por tarjeta como por filas con la inf. De la oferta con el estado (rechazado o aprobado)
 
-### Making a Progressive Web App
+-Cuando se muestren por filas debe poder mostrar debe tener la opción de mostrar los avisos rechazado y los aprobados por separados.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+-Debe poder acceder al detalle de los avisos en forma individual
 
-### Advanced Configuration
+**Historia de Usuario 5**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+La institución quiere poder gestionar su vinculación con las empresas -> que se busca como requerimiento? (pregunto por qué hablan de instituto y me parece que estos tienen el rol de reclutadores)
 
-### Deployment
+-No me queda claro si la empresa hace el requerimiento a la institución pidiendo la empresa vincularse a la institución en cuestión o la Institución a la empresa
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Según entiendo las empresas debieran tener la opción de poder vincularse a los reclutadores por ende en el vínculo de empresa debiera salir en el detalle de visualización  la inf. de la empresa como: Descripción, rubro, tamaño, ubicación, teléfono, tipo de cargos que podría requerir: técnicos, profesionales u mano de obra no especializada.
 
-### `npm run build` fails to minify
+-Debería poder visualizar la solicitud de vinculación por empresa con el detalle de esta.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+-Debería poder visualizar las empresas vinculadas
+
+-Debería poder visualizar las empresas rechazadas
+
+-Debería poder visualizar listado de solicitudes en cola, con la opción dirigirse a empresas vinculadas y rechazadas
+
+-Debiera poder verse en el detalle de la empresa los últimos requerimientos hechos por esta.
+
+**Historia de Usuario 6**
+
+La institución quiere poder gestionar el capital humano con el que cuenta su Organización (Municipio, Instituto, Universidad, Fundación u Otec).
+
+-Debiera poder visualizar el listado de postulantes que tiene en cartera (en profesión debiera decir profesión u ocupación ya que en los municipios generalmente la mayor cantidad de personas que postulan son personas sin grados académicos) y los avisos para poder asociarlos.
+
+-Debiera poder seleccionar el aviso de la empresa al cual enviara postulantes
+
+-Debiera poder seleccionar a los postulantes según requerimientos de la empresa y generar un listado de estos, para enviárselo a la empresa.
+
+-Debiera tener una notificación alertando la gestión de envío de postulantes a la empresa una vez realizada esta gestión.
